@@ -30,5 +30,6 @@ def guardarEstudiantesS(nombres, correos, contrasenas):
 
 def leerEstudiantesS():
     with shelve.open('estudiantes_shelve') as shelf:
-        ll = [k for k in shelf]
-        return ll
+        for k in shelf:
+            print(f'{k}:\n{shelf[k]}')
+            print('\n')

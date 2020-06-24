@@ -14,8 +14,9 @@ for nom, co, con in zip(nombres, correos, contrasenas):
 StudentIO.guardarEstudiantesP(estudiantes)
 for i in StudentIO.leerEstudiantesP():
     print(i)
+    print('\n')
 
 StudentIO.guardarEstudiantesS(nombres, correos, contrasenas)
-print (StudentIO.leerEstudiantesS())
+StudentIO.leerEstudiantesS()
 
 
